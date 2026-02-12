@@ -8,7 +8,7 @@
 
 Una aplicación móvil multiplataforma que digitaliza la experiencia tradicional de la Lotería Campechana, combinando animaciones fluidas, síntesis de voz y tecnología moderna.
 
-[Demo Video](#) | [Descargar APK](#) | [Reportar Bug](https://github.com/ElianArmendarizz/loteria-campechana/issues)
+[Demo Video](#) | [Descargar APK](https://github.com/ElianArmendarizz/loteria-campechana/releases/download/v1.0.0/Loteria.Campechana.apk) | [Reportar Bug](https://github.com/ElianArmendarizz/loteria-campechana/issues)
 
 </div>
 
