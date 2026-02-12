@@ -4,7 +4,7 @@ import {
   Alert,
   Animated,
   Dimensions,
-  Image,  // ← AGREGAR
+  Image, 
   Modal,
   PanResponder,
   ScrollView,

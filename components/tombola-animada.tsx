@@ -31,11 +31,9 @@ export default function TombolaAnimada({
   // Animación de giro
   useEffect(() => {
     if (estaGirando && ficha) {
-      // Reiniciar estados
       setMostrandoNumero(true);
       opacidad.value = 1;
 
-      // FASE 1: Girar y mostrar número
       rotacion.value = withSequence(
         withTiming(360, { duration: 800, easing: Easing.out(Easing.cubic) }),
         withTiming(0, { duration: 0 }),
@@ -55,14 +53,14 @@ export default function TombolaAnimada({
         });
       }, 400);
 
-      // FASE 2: Transición a imagen después de 2 segundos
+      
       setTimeout(() => {
-        // Fade out
+        
         opacidad.value = withTiming(0, { duration: 300 }, (finished) => {
           if (finished) {
-            // Cambiar a mostrar imagen (ejecutar en JS thread)
+            
             runOnJS(setMostrandoNumero)(false);
-            // Fade in
+            
             opacidad.value = withTiming(1, { duration: 300 });
           }
         });
@@ -90,12 +88,12 @@ export default function TombolaAnimada({
       <Animated.View style={[styles.tombola, estiloAnimado]}>
         {ficha ? (
           mostrandoNumero ? (
-            // FASE 1: Solo el número
+            
             <View style={styles.contenido}>
               <Text style={styles.numero}>{ficha.numero}</Text>
             </View>
           ) : (
-            // FASE 2: Imagen como fondo del círculo
+            
             <ImageBackground 
               source={ficha.imagen}
               style={styles.imagenFondo}

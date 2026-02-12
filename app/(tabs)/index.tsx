@@ -5,7 +5,7 @@ import {
   TouchableOpacity,
   ScrollView,
   Alert,
-  Image,  // ← AGREGAR
+  Image, 
 } from "react-native";
 import { useState, useEffect } from "react";
 import LoadingScreen from "@/components/loading-screen";
@@ -29,7 +29,6 @@ export default function LoteriaScreen() {
   const [historialAnterior, setHistorialAnterior] = useState<number[]>([]);
   const [estaGirando, setEstaGirando] = useState(false);
 
-  // Al iniciar la app
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
@@ -66,7 +65,7 @@ export default function LoteriaScreen() {
       return;
     }
 
-    // Evitar clicks múltiples mientras está girando
+    
     if (estaGirando) return;
 
     // Iniciar animación
@@ -77,7 +76,6 @@ export default function LoteriaScreen() {
     setHistorial([numeroExtraido, ...historial]);
     setNumerosDisponibles(numerosDisponibles.slice(1));
 
-    // Detener animación después de 4 segundos (2s número + 2s imagen)
     setTimeout(() => {
       setEstaGirando(false);
     }, 4000);

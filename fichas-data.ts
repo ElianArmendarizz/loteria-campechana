@@ -2,7 +2,7 @@
 export interface Ficha {
   numero: number;
   nombre: string;
-  imagen: any; // Ruta de la imagen real
+  imagen: any; 
 }
 
 // Array con las 90 fichas de la Lotería Campechana

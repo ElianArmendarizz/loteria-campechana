@@ -11,7 +11,7 @@
  */
 
 export function shuffleArray<T>(array: T[]): T[] {
-  const newArray = [...array]; // Crear copia para no modificar el original
+  const newArray = [...array]; // Crea copia para no modificar el original
   
   for (let i = newArray.length - 1; i > 0; i--) {
     // Generar índice aleatorio usando crypto

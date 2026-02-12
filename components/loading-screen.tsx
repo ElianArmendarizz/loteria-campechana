@@ -60,7 +60,7 @@ export default function LoadingScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1a472a', // Verde oscuro
+    backgroundColor: '#1a472a', 
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -82,13 +82,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 48,
     fontWeight: 'bold',
-    color: '#f4e5d3', // Crema
+    color: '#f4e5d3', 
     letterSpacing: 2,
   },
   subtitle: {
     fontSize: 28,
     fontWeight: '600',
-    color: '#d4af37', // Dorado
+    color: '#d4af37', 
     marginTop: 5,
     letterSpacing: 4,
   },
